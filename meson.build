@@ -6,6 +6,8 @@ exe = executable('emm',
                  'main.cpp',
                  'MachineManager.hpp',
                  'MachineManager.cpp',
+                 'Machine.cpp',
+                 'Machine.hpp',
                  install : true)
 
 test('basic', exe)

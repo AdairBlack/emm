@@ -1,13 +1,18 @@
 #pragma once
 
-namespace Machine
+#include "Machine.hpp"
+
+namespace MachineSpace
 {
 
 class MachineManager
 {
     public:
         MachineManager(int _id);
-        int id; 
+        int id;
+    
+    private:
+        std::vector<Machine> machines;
 };
 
 }

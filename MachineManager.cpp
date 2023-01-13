@@ -2,8 +2,9 @@
 
 #include <iostream>
 
-namespace Machine
+namespace MachineSpace
 {
+    
 MachineManager::MachineManager(int _id): id(_id)
 {
     std::cout << "Construct a machine. ID:" << id << "." << std::endl;

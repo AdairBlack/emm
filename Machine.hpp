@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-namespace Machine
+namespace MachineSpace
 {
 
 class Machine
