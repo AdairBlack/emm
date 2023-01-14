@@ -5,15 +5,17 @@
 namespace MachineSpace
 {
 
-class MachineManager
-{
+    class MachineManager
+    {
     public:
         MachineManager(int _id);
         int id;
-    
+
+        void addMachine(int id);
+        void removeMachine(int id);
+
     private:
         std::vector<Machine> machines;
-};
+    };
 
 }
-

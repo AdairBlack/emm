@@ -6,8 +6,8 @@
 namespace MachineSpace
 {
 
-class Machine
-{
+    class Machine
+    {
     public:
         Machine(int _id, std::string _description);
         int id;
@@ -16,6 +16,6 @@ class Machine
 
         void addComponent(std::string &componentName);
         void removeComponent(std::string &componentName);
-};
+    };
 
 }

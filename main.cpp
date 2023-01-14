@@ -6,22 +6,23 @@
 
 #define PROJECT_NAME "emm"
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     printf("This is project %s.\n", PROJECT_NAME);
-    if(0)
+    if (0)
     {
         argc = argc;
         argv = argv;
     }
 
     std::vector<MachineSpace::MachineManager> machineManagers;
-    
-    for(int i = 0; i < 10; i++)
+
+    for (int i = 0; i < 10; i++)
     {
         machineManagers.push_back(MachineSpace::MachineManager(i));
     }
 
-    for(auto i : machineManagers)
+    for (auto i : machineManagers)
     {
         std::cout << "Machine id:" << i.id << "." << std::endl;
     }
