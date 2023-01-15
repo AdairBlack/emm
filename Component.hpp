@@ -1,7 +1,6 @@
 #pragma once
 
 #include <string>
-#include <vector>
 
 namespace MachineSpace
 {
@@ -13,6 +12,7 @@ namespace MachineSpace
         std::string pn;
         std::string qn;
         std::string desc;
+        std::string getStorageString();
 
     private:
         int saveToNVStorate();

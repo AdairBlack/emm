@@ -8,6 +8,8 @@ exe = executable('emm',
                  'MachineManager.cpp',
                  'Machine.cpp',
                  'Machine.hpp',
+                 'StorageFile.cpp',
+                 'StorageFile.hpp',
                  install : true)
 
 test('basic', exe)
