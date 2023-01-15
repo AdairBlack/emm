@@ -4,16 +4,17 @@
 #include <iostream>
 #include <fstream>
 
+#define FILE_PATH "components"
+
 namespace NVStorage
 {
-    int StorageFile::saveComponentToFile(MachineSpace::Component &component)
+    int StorageFile::saveToFile(std::string content)
     {
+        std::cout << "Write content: \"" << content << "\" to file: \"" << FILE_PATH << "\"" << std::endl;
         std::ofstream fout;
-        std::string line;
-        line = component.getStorageString();
-        fout.open("StorageFiles/components", std::ios::app);
-
-        fout << line << std::endl;
+        fout.open(FILE_PATH, std::ios::app);
+        std::cout << "test0 " << fout.is_open() << std::endl;
+        fout << content << std::endl;
 
         fout.close();
 

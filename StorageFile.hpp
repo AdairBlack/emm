@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Component.hpp"
+#include <string>
 
 namespace NVStorage
 {
     class StorageFile
     {
     public:
-        static int saveComponentToFile(MachineSpace::Component &component);
+        static int saveToFile(std::string content);
     };
 }
