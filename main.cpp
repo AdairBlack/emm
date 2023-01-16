@@ -1,5 +1,4 @@
 #include "MachineManager.hpp"
-#include "MachineManager.hpp"
 #include "Component.hpp"
 
 #include <iostream>
@@ -16,18 +15,7 @@ int main(int argc, char **argv)
         argv = argv;
     }
 
-    std::vector<MachineSpace::MachineManager> machineManagers;
     std::vector<MachineSpace::Component> components;
-
-    for (auto i : machineManagers)
-    {
-        std::cout << "Machine id:" << i.id << "." << std::endl;
-    }
-
-    for (int i = 0; i < 10; i++)
-    {
-        machineManagers.push_back(MachineSpace::MachineManager(i));
-    }
 
     for (int i = 0; i < 10; i++)
     {

@@ -8,14 +8,17 @@ namespace MachineSpace
     class MachineManager
     {
     public:
-        MachineManager(int _id);
-        int id;
-
-        void addMachine(int id);
-        void removeMachine(int id);
+        static MachineManager &getInstance()
+        {
+            static MachineManager instance;
+            return instance;
+        }
 
     private:
-        std::vector<Machine> machines;
+        MachineManager(){};
+        ~MachineManager(){};
+        MachineManager(const MachineManager &);
+        MachineManager &operator=(const MachineManager &);
     };
 
 }
