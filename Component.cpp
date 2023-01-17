@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-namespace MachineSpace
+namespace MaterialManagerSpace
 {
 
     Component::Component(std::string _pn, std::string _qn, std::string _desc) : pn(_pn), qn(_qn), desc(_desc)

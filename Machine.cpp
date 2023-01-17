@@ -1,9 +1,8 @@
 #include "Machine.hpp"
 
-#include <algorithm>
 #include <iostream>
 
-namespace MachineSpace
+namespace MaterialManagerSpace
 {
 
     Machine::Machine(int _id, std::string _description) : id(_id), description(_description)

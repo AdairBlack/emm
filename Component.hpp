@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace MachineSpace
+namespace MaterialManagerSpace
 {
 
     class Component

@@ -1,7 +1,9 @@
+#pragma once
+
 #include <string>
 #include <vector>
 
-namespace MachineSpace
+namespace MaterialManagerSpace
 {
 
     class Machine

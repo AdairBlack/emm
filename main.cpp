@@ -1,4 +1,4 @@
-#include "MachineManager.hpp"
+#include "MaterialManager.hpp"
 #include "Component.hpp"
 
 #include <iostream>
@@ -15,12 +15,16 @@ int main(int argc, char **argv)
         argv = argv;
     }
 
-    std::vector<MachineSpace::Component> components;
+    std::vector<MaterialManagerSpace::Component> components;
 
     for (int i = 0; i < 10; i++)
     {
-        components.push_back(MachineSpace::Component(std::string("Comp_0123"), std::to_string(i), std::string("A simple component.")));
+        components.push_back(MaterialManagerSpace::Component(std::string("Comp_0123"), std::to_string(i), std::string("A simple component.")));
     }
+
+    auto &materialManager = MaterialManagerSpace::MaterialManager::getInstance();
+
+    std::cout << "Thanks for using." << std::endl;
 
     return 0;
 }
