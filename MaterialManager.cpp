@@ -9,4 +9,10 @@ namespace MaterialManagerSpace
         static MaterialManager instance;
         return instance;
     }
+
+    void MaterialManager::addComponent(Component component)
+    {
+        components.push_back(component);
+        return;
+    }
 }

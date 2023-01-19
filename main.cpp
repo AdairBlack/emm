@@ -24,6 +24,8 @@ int main(int argc, char **argv)
 
     auto &materialManager = MaterialManagerSpace::MaterialManager::getInstance();
 
+    materialManager.addComponent(components[0]);
+
     std::cout << "Thanks for using." << std::endl;
 
     return 0;
