@@ -8,12 +8,12 @@ The system helps to record the materials' positon.
 ***
 
 #### MaterialManager
-Manage all the materials borrowed from company.
+Manage all the materials borrowed.
 
 ***
 
-#### PosManager
-Manage all the materials' position from company.
+#### PositionManager
+Manage all the materials' position.
 
 ***
 
