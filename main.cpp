@@ -1,5 +1,6 @@
 #include "MaterialManager.hpp"
 #include "Component.hpp"
+#include "ControlPanel.hpp"
 
 #include <iostream>
 #include <vector>
@@ -25,6 +26,8 @@ int main(int argc, char **argv)
     auto &materialManager = MaterialManagerSpace::MaterialManager::getInstance();
 
     materialManager.addComponent(components[0]);
+
+    auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
 
     std::cout << "Thanks for using." << std::endl;
 

@@ -12,6 +12,8 @@ exe = executable('emm',
                  'StorageFile.hpp',
                  'Component.cpp',
                  'Component.hpp',
+                 'ControlPanel.cpp',
+                 'ControlPanel.hpp',
                  install : true)
 
 test('basic', exe)

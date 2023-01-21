@@ -14,6 +14,7 @@ namespace MaterialManagerSpace
     public:
         static MaterialManager &getInstance();
         void addComponent(Component component);
+        void removeComponent(Component component);
 
     private:
         MaterialManager() { std::cout << "Construct a MaterialManager singleton." << std::endl; };
