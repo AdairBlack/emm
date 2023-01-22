@@ -15,4 +15,10 @@ namespace MaterialManagerSpace
         components.push_back(component);
         return;
     }
+
+    void MaterialManager::removeComponent(uint64_t id)
+    {
+
+        return;
+    }
 }

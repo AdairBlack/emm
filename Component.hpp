@@ -12,6 +12,7 @@ namespace MaterialManagerSpace
         std::string pn;
         std::string qn;
         std::string desc;
+        uint64_t id;
         std::string getStorageString();
 
     private:
