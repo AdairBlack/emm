@@ -16,16 +16,9 @@ int main(int argc, char **argv)
         argv = argv;
     }
 
-    std::vector<MaterialManagerSpace::Component> components;
-
-    for (int i = 0; i < 10; i++)
-    {
-        components.push_back(MaterialManagerSpace::Component(std::string("Comp_0123"), std::to_string(i), std::string("A simple component.")));
-    }
-
     auto &materialManager = MaterialManagerSpace::MaterialManager::getInstance();
 
-    materialManager.addComponent(components[0]);
+    materialManager.addComponent("CompPN0", "QNsdfjksf123", "A simple component.", 6523532);
 
     auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
 

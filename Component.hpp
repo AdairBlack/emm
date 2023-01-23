@@ -8,7 +8,7 @@ namespace MaterialManagerSpace
     class Component
     {
     public:
-        Component(std::string _pn, std::string _qn, std::string _desc);
+        Component(std::string _pn, std::string _qn, std::string _desc, uint64_t _id);
         std::string pn;
         std::string qn;
         std::string desc;

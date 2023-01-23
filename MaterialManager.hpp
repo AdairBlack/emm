@@ -13,7 +13,7 @@ namespace MaterialManagerSpace
     {
     public:
         static MaterialManager &getInstance();
-        void addComponent(Component component);
+        void addComponent(std::string pn, std::string qn, std::string desc, uint64_t id);
         void removeComponent(uint64_t id);
 
     private:

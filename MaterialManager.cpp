@@ -10,9 +10,9 @@ namespace MaterialManagerSpace
         return instance;
     }
 
-    void MaterialManager::addComponent(Component component)
+    void MaterialManager::addComponent(std::string pn, std::string qn, std::string desc, uint64_t id)
     {
-        components.push_back(component);
+        components.push_back(Component{pn, qn, desc, id});
         return;
     }
 

@@ -7,7 +7,7 @@
 namespace MaterialManagerSpace
 {
 
-    Component::Component(std::string _pn, std::string _qn, std::string _desc) : pn(_pn), qn(_qn), desc(_desc)
+    Component::Component(std::string _pn, std::string _qn, std::string _desc, uint64_t _id) : pn(_pn), qn(_qn), desc(_desc), id(_id)
     {
         std::cout << "Construct a component: pn: " << pn << ", qn: " << qn << ", desc: " << desc << std::endl;
         saveToNVStorate();
@@ -16,7 +16,7 @@ namespace MaterialManagerSpace
 
     std::string Component::getStorageString()
     {
-        return this->pn + " " + this->qn + " " + this->desc;
+        return this->pn + " " + this->qn + " " + this->desc + " " + id;
     }
 
     int Component::saveToNVStorate()
