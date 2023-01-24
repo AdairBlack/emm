@@ -16,7 +16,7 @@ namespace MaterialManagerSpace
 
     std::string Component::getStorageString()
     {
-        return this->pn + " " + this->qn + " " + this->desc + " " + id;
+        return this->pn + " " + this->qn + " " + this->desc + " " + std::to_string(this->id);
     }
 
     int Component::saveToNVStorate()

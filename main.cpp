@@ -18,7 +18,10 @@ int main(int argc, char **argv)
 
     auto &materialManager = MaterialManagerSpace::MaterialManager::getInstance();
 
-    materialManager.addComponent("CompPN0", "QNsdfjksf123", "A simple component.", 6523532);
+    for (int i = 0; i < 14; i++)
+    {
+        materialManager.addComponent("CompPN0", "QNsdfjksf123", "A simple component.");
+    }
 
     auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
 
