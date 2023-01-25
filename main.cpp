@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 
     for (int i = 0; i < 14; i++)
     {
-        materialManager.addComponent("CompPN0", "QNsdfjksf123", "A simple component.");
+        materialManager.addComponent("CompPN" + std::to_string(i), "QNsdfjksf123_" + std::to_string(i), "A simple component number" + std::to_string(i) + ".");
     }
 
     auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
