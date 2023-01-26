@@ -9,6 +9,8 @@ namespace ControlPanelSpace
     public:
         static ControlPanel &getInstance();
 
+        void showMainMenu();
+
     private:
         ControlPanel() { std::cout << "Construct a ControlPanel singleton." << std::endl; };
         ~ControlPanel(){};

@@ -24,6 +24,7 @@ int main(int argc, char **argv)
     }
 
     auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
+    controlPanel.showMainMenu();
 
     std::cout << "Thanks for using." << std::endl;
 

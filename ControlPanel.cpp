@@ -7,4 +7,15 @@ namespace ControlPanelSpace
         static ControlPanel instance;
         return instance;
     }
+
+    void ControlPanel::showMainMenu()
+    {
+        std::cout << "*********************************************" << std::endl;
+        std::cout << "****      Edgar  Material Management     ****" << std::endl;
+        std::cout << "*********************************************" << std::endl;
+        std::cout << "****       1. show all the components    ****" << std::endl;
+        std::cout << "****       2. add a component            ****" << std::endl;
+        std::cout << "****       3. remove a component         ****" << std::endl;
+        std::cout << "*********************************************" << std::endl;
+    }
 } // namespace ControlPanelSpace
