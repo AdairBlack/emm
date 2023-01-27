@@ -26,6 +26,12 @@ int main(int argc, char **argv)
     auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
     controlPanel.showMainMenu();
 
+    std::string input;
+
+    std::cin >> input;
+
+    std::cout << "Input: " << input << std::endl;
+
     std::cout << "Thanks for using." << std::endl;
 
     return 0;
