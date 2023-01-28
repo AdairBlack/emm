@@ -29,4 +29,17 @@ namespace MaterialManagerSpace
         }
         return;
     }
+
+    std::string MaterialManager::showComponentInfo(uint64_t id)
+    {
+        for (auto i : components)
+        {
+            if (id == i.id)
+            {
+                return i.getStorageString();
+            }
+        }
+        return "Error!!!";
+    }
+
 }

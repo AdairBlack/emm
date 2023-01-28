@@ -26,11 +26,13 @@ int main(int argc, char **argv)
     auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
     controlPanel.showMainMenu();
 
-    std::string input;
+    uint64_t input;
 
     std::cin >> input;
 
-    std::cout << "Input: " << input << std::endl;
+    std::cout << "Input(number): " << input << std::endl;
+
+    std::cout << "Component: " << materialManager.showComponentInfo(input) << std::endl;
 
     std::cout << "Thanks for using." << std::endl;
 
