@@ -21,5 +21,17 @@ namespace ControlPanelSpace
         int input = 0;
         std::cin >> input;
         std::cout << "Input(number): " << input << std::endl;
+
+        switch (input)
+        {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        default:
+            break;
+        }
     }
 } // namespace ControlPanelSpace
