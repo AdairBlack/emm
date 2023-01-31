@@ -42,4 +42,8 @@ namespace MaterialManagerSpace
         return "Error!!!";
     }
 
+    void MaterialManager::getIdList()
+    {
+    }
+
 }

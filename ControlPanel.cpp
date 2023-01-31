@@ -25,6 +25,7 @@ namespace ControlPanelSpace
         switch (input)
         {
         case 1:
+
             break;
         case 2:
             break;
@@ -33,5 +34,12 @@ namespace ControlPanelSpace
         default:
             break;
         }
+    }
+
+    void ControlPanel::showAllTheComponents()
+    {
+        std::cout << "*********************************************" << std::endl;
+        std::cout << "****        Show All the Components      ****" << std::endl;
+        std::cout << "*********************************************" << std::endl;
     }
 } // namespace ControlPanelSpace
