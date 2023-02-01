@@ -42,8 +42,14 @@ namespace MaterialManagerSpace
         return "Error!!!";
     }
 
-    void MaterialManager::getIdList()
+    std::vector<uint64_t> MaterialManager::getComponentsIdList()
     {
+        std::vector<uint64_t> idList;
+        for (auto &i : components)
+        {
+            idList.push_back(i.id);
+        }
+        return idList;
     }
 
 }

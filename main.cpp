@@ -25,6 +25,13 @@ int main(int argc, char **argv)
 
     auto &controlPanel = ControlPanelSpace::ControlPanel::getInstance();
 
+    auto idList = materialManager.getComponentsIdList();
+
+    for (auto &i : idList)
+    {
+        std::cout << "id: " << i << std::endl;
+    }
+
     controlPanel.showMainMenu();
 
     std::cout << "Thanks for using." << std::endl;

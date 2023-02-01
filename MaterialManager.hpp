@@ -16,7 +16,7 @@ namespace MaterialManagerSpace
         void addComponent(std::string pn, std::string qn, std::string desc);
         void removeComponent(uint64_t id);
         std::string showComponentInfo(uint64_t id);
-        void getIdList();
+        std::vector<uint64_t> getComponentsIdList();
 
     private:
         MaterialManager() { std::cout << "Construct a MaterialManager singleton." << std::endl; };
