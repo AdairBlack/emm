@@ -33,6 +33,12 @@ int main(int argc, char **argv)
     }
 
     controlPanel.showMainMenu();
+    std::vector<std::string> contents;
+    for (auto &i : idList)
+    {
+        contents.push_back(materialManager.getComponentInfo(i));
+    }
+    controlPanel.showAllTheComponents(contents);
 
     std::cout << "Thanks for using." << std::endl;
 

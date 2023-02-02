@@ -1,5 +1,6 @@
 #pragma once
 
+#include <vector>
 #include <iostream>
 
 namespace ControlPanelSpace
@@ -10,7 +11,7 @@ namespace ControlPanelSpace
         static ControlPanel &getInstance();
 
         void showMainMenu();
-        void showAllTheComponents();
+        void showAllTheComponents(std::vector<std::string> &contents);
 
     private:
         ControlPanel() { std::cout << "Construct a ControlPanel singleton." << std::endl; };

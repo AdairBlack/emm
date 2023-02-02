@@ -35,10 +35,15 @@ namespace ControlPanelSpace
         }
     }
 
-    void ControlPanel::showAllTheComponents()
+    void ControlPanel::showAllTheComponents(std::vector<std::string> &contents)
     {
         std::cout << "*********************************************" << std::endl;
         std::cout << "****        Show All the Components      ****" << std::endl;
         std::cout << "*********************************************" << std::endl;
+        for (auto &i : contents)
+        {
+            std::cout << i << std::endl;
+        }
+        return;
     }
 } // namespace ControlPanelSpace

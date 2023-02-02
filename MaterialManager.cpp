@@ -30,7 +30,7 @@ namespace MaterialManagerSpace
         return;
     }
 
-    std::string MaterialManager::showComponentInfo(uint64_t id)
+    std::string MaterialManager::getComponentInfo(uint64_t id)
     {
         for (auto i : components)
         {
