@@ -14,8 +14,8 @@ namespace MaterialManagerSpace
         std::string description;
         std::vector<std::string> components;
 
-        void addComponent(std::string &componentName);
-        void removeComponent(std::string &componentName);
+        void addComponent(uint64_t id);
+        void removeComponent(uint64_t id);
     };
 
 }
