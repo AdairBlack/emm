@@ -11,16 +11,15 @@ namespace MaterialManagerSpace
         return;
     }
 
-    void Machine::addComponent(std::string &componentName)
+    void Machine::addComponent(uint64_t id)
     {
-        components.push_back(std::move(componentName));
 
         return;
     }
 
-    void Machine::removeComponent(std::string &componentName)
+    void Machine::removeComponent(uint64_t id)
     {
-        components.erase(std::find(components.begin(), components.end(), componentName));
+
         return;
     }
 
