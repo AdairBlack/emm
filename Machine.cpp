@@ -19,7 +19,14 @@ namespace MaterialManagerSpace
 
     void Machine::removeComponent(uint64_t id)
     {
-
+        for (auto iterComp = components.cbegin(); iterComp != components.cend(); iterComp++)
+        {
+            if (iterComp->id == id)
+            {
+                components.erase(iterComp);
+                break;
+            }
+        }
         return;
     }
 
