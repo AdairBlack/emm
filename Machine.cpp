@@ -1,6 +1,7 @@
 #include "Machine.hpp"
 
 #include <iostream>
+#include <algorithm>
 
 namespace MaterialManagerSpace
 {
@@ -13,6 +14,12 @@ namespace MaterialManagerSpace
 
     void Machine::addComponent(uint64_t id)
     {
+        if (components.end() == std::find_if(components.begin(), components.end(),
+                                             [id](auto compId)
+                                             { return compId == id; }))
+        {
+            components.push_back(id);
+        }
 
         return;
     }
@@ -21,7 +28,7 @@ namespace MaterialManagerSpace
     {
         for (auto iterComp = components.cbegin(); iterComp != components.cend(); iterComp++)
         {
-            if (iterComp->id == id)
+            if (*iterComp == id)
             {
                 components.erase(iterComp);
                 break;
