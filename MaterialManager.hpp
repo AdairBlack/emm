@@ -15,6 +15,8 @@ namespace MaterialManagerSpace
         static MaterialManager &getInstance();
         void addComponent(std::string pn, std::string qn, std::string desc);
         void removeComponent(uint64_t id);
+        void addComponentToMachine(Machine &machine, uint64_t id);
+
         std::string getComponentInfo(uint64_t id);
         std::vector<uint64_t> getComponentsIdList();
 
