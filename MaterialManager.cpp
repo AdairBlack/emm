@@ -48,6 +48,7 @@ namespace MaterialManagerSpace
         std::vector<uint64_t> idList;
         for (auto &i : components)
         {
+            // TODO
             idList.push_back(i.id);
         }
         return idList;
